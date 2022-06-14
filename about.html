@@ -1,0 +1,86 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+	<title>Riya Prasad - About</title>
+
+</head>
+<body>
+    <div class="noise"></div>
+	
+	 <!-- nav -->
+	<div class="navbar">
+        <div class="container">
+            <a href="index.html"><img src="./assets/logo.svg" alt="Riya Prasad" class="logo"></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="assets/menu.svg" alt="navbar-menu">
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="assets/close.svg" alt="close-nav">
+
+                <ul class="primary-nav">
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>        
+    </div>
+
+    
+    <section class="about">
+        <div class="container">
+            <div class="grid about-page-grid">
+                <div class="flex">
+                    <div class="svg"><img src="./assets/Star 2.svg" alt=""></div>
+                    <h2>More about me....</h2>
+                    <span>Designing for me is about finding solutions, with a user and customer-centric mindset. My high attention to detail allows me to connect the dots and improve experiences as well as ways of operating from day one.My ambition is to continue delivering meaningful and emotional products, stories and experiences for people while driving impactful innovation that will shape the future.</span>
+                    <span>I have made it my mission to help you combine your biz strengths and create a strong, BADASS BRAND. I know how overwhelming it can feel when you have your ideas and visions in mind but struggle to combine them into one strong, clear brand ready to take on anything. I am here to help you sort through this overwhelm so we can bring your brand vision to life and set your biz up for success so you can focus on what you do best. I believe that every site or service should be created aesthetically pleasing and have extra value for users.</span>
+                    <button class="about-page-btn btn"  onclick="location.href='contact.html'">LET'S TALK</button>
+                </div>
+                <img class="about-page-img" src="./assets/me.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <div class="line"></div>
+    
+    <section class="footer">
+        <div class="container">
+                <h2>RIYA PRASAD</h2>
+                <div class="div">
+                    <a target="_blank" href="https://www.instagram.com/designs__by_me/">INSTAGRAM</a>
+                    <a target="_blank" href="https://www.behance.net/riyaprasad">BEHANCE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<script>
+        const mobileBtn = document.getElementById('mobile-cta')
+        const mobileBtnExit = document.getElementById('mobile-exit')
+        const nav = document.querySelector("nav")
+
+        mobileBtn.addEventListener('click', ()=> {
+            nav.classList.add('menu-btn');
+        })
+        mobileBtnExit.addEventListener('click', ()=> {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+     <!-- SCROLL REVEAL-->
+     <script src="js/scrollreveal.min.js"></script>
+     
+     <!-- main js -->
+     <script src="js/main.js"></script>
+</body>
+</html>
