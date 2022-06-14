@@ -144,7 +144,7 @@ img{
     font-size: 2.5em;
     font-weight: 100;
     padding-left: 0.5em;
-    color: var(--secondary-color);
+    color: #94d441;
 }
 
 .svg img{
@@ -311,6 +311,8 @@ a:hover{
     color: var(--text-color);
     padding: 1em;
     width: 60%;
+    opacity: 1;
+    visibility: visible;
 }
 
 
@@ -346,6 +348,7 @@ a:hover{
 
 .contact .container{
     align-items: center;
+    padding: 2em;
 }
 
 .contact .start-project{
