@@ -294,6 +294,7 @@ a:hover{
     align-items: center;
     margin: 3em auto;
     padding: 0 1em;
+    position: relative;
 }
 
 .about h1{
@@ -315,6 +316,9 @@ a:hover{
     visibility: visible;
 }
 
+.about .about-sec-svg {
+    opacity: 0;
+}
 
 .about .btn{
     width: 40%;
@@ -541,6 +545,16 @@ a:hover{
 }
 
 @media only screen and (max-width: 620px){
+    .hero .svg{
+        display: none;
+    }
+    
+    .about .about-sec-svg {
+        opacity: 1;
+        position: absolute;
+        left: 1em;
+        top: -2em;
+    }
 
     .about p{
         width: 100%;
